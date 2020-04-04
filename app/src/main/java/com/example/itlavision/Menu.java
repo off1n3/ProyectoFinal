@@ -36,8 +36,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         if (v.getId() == R.id.btnCodBarra) {
             Toast.makeText(this, "Toast CodB", Toast.LENGTH_SHORT).show();
-//            Intent i = new Intent(getApplicationContext(), tuclase.class);
-//            startActivity(i);
+            Intent i = new Intent(getApplicationContext(), BarScannerMain.class);
+            startActivity(i);
         }
 
         if (v.getId() == R.id.btnTrans) {
@@ -48,8 +48,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
 
         if (v.getId() == R.id.btnQR) {
             Toast.makeText(this, "Toast QR", Toast.LENGTH_SHORT).show();
-//            Intent i = new Intent(getApplicationContext(), tuclase.class);
-//            startActivity(i);}
+          Intent i = new Intent(getApplicationContext(), ScannerMainActivity.class);
+           startActivity(i);}
         }
     }
-}
+
