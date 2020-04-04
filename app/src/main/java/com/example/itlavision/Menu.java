@@ -2,6 +2,7 @@ package com.example.itlavision;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -26,21 +27,29 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
 
 
         btncodbarra.setOnClickListener(this);
+        btntraductor.setOnClickListener(this);
+        btnQR.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.btnCodBarra){
+        if (v.getId() == R.id.btnCodBarra) {
             Toast.makeText(this, "Toast CodB", Toast.LENGTH_SHORT).show();
+//            Intent i = new Intent(getApplicationContext(), tuclase.class);
+//            startActivity(i);
         }
 
-        if(v.getId() == R.id.btnTrans){
+        if (v.getId() == R.id.btnTrans) {
             Toast.makeText(this, "Toast Transla", Toast.LENGTH_SHORT).show();
+//            Intent i = new Intent(getApplicationContext(), tuclase.class);
+//            startActivity(i);
         }
 
-        if(v.getId() == R.id.btnQR){
-            Toast.makeText(this, "Toast CodB", Toast.LENGTH_SHORT).show();
+        if (v.getId() == R.id.btnQR) {
+            Toast.makeText(this, "Toast QR", Toast.LENGTH_SHORT).show();
+//            Intent i = new Intent(getApplicationContext(), tuclase.class);
+//            startActivity(i);}
         }
     }
 }
