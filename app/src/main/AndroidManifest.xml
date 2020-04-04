@@ -20,8 +20,10 @@
         <activity android:name=".BarScannerMain" />
         <activity android:name=".ScannerMainActivity" />
         <activity android:name=".ScannerQR" />
-        <activity android:name=".BuildConfig$QRscannerMain" />
+<!--        <activity android:name=".BuildConfig$QRscannerMain" />-->
         <activity android:name=".Menu" />
+        <activity android:name=".Traductor.TraductorMain" />
+
         <activity android:name=".Loading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

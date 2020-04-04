@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.itlavision.Traductor.TraductorMain;
+
 public class Menu extends AppCompatActivity implements View.OnClickListener {
 
     ImageView btncodbarra, btntraductor, btnQR;
@@ -42,8 +44,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
 
         if (v.getId() == R.id.btnTrans) {
             Toast.makeText(this, "Toast Transla", Toast.LENGTH_SHORT).show();
-//            Intent i = new Intent(getApplicationContext(), tuclase.class);
-//            startActivity(i);
+            Intent i = new Intent(getApplicationContext(), TraductorMain.class);
+            startActivity(i);
         }
 
         if (v.getId() == R.id.btnQR) {
