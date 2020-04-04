@@ -89,18 +89,18 @@ public class BarScannerMain extends AppCompatActivity {
     }
 
     private void resultado(String ID) {
-        /*Intent intent = new Intent(this, Resultado.class);
+        Intent intent = new Intent(this, Resultado.class);
         intent.putExtra("ID", ID);
-        startActivity(intent);*/
+        startActivity(intent);
     }
 
     private void registroView(String ID) {
-        /*Intent intent = new Intent(this, Registro.class);
+        Intent intent = new Intent(this, Registro.class);
         intent.putExtra("ID", ID);
-        startActivity(intent);*/
+        startActivity(intent);
     }
     private void verRegistro() {
-        /*Intent intent = new Intent(this, ObjetosEscaneados.class);
-        startActivity(intent);*/
+        Intent intent = new Intent(this, ObjetosEscaneados.class);
+        startActivity(intent);
     }
 }
